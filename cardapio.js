@@ -5,7 +5,7 @@ function criarItemCardapio(titulo, descricao, foto){
 
 
 const divItemCardapio = document.createElement('div')
-divItemCardapio.className = 'item-Cardapio'
+divItemCardapio.className = 'item-cardapio'
 
 const h3Titulo = document.createElement('h3')
 h3Titulo.textContent = titulo
