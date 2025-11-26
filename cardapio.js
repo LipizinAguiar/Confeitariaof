@@ -1,7 +1,7 @@
 
 
 
-function criarIteCardapio(titulo, descricao, foto){
+function criarItemCardapio(titulo, descricao, foto){
 
 
 const divItemCardapio = document.createElement('div')
@@ -29,5 +29,4 @@ divC.appendChild(divItemCardapio)
 
 }
 
-criarIteCardapio('Bolo de Chocolate','Um classico irresistivel com camadas de chocolate.', 
-    'https://montarumnegocio.com/wp-content/uploads/2024/07/como-fazer-bolo-de-cenoura-para-vender.jpg')
+criarItemCardapio('Bolo de Chocolate','Um classico irresistivel com camadas de chocolate.', 'https://montarumnegocio.com/wp-content/uploads/2024/07/como-fazer-bolo-de-cenoura-para-vender.jpg')
