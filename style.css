@@ -38,14 +38,6 @@ img {
   object-fit: cover;
 }
 
-.capa {
-  width: 100%;
-  height: 500px;  /* Ou qualquer altura que você preferir */
-  object-fit: cover; /* Isso vai garantir que a imagem cubra todo o espaço sem distorcer */
-  object-position: center center; /* Posiciona a imagem no centro */
-  display: block;
-}
-
 
 .sobre-nos {
   width: 95%;
