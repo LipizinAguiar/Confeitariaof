@@ -29,4 +29,23 @@ divC.appendChild(divItemCardapio)
 
 }
 
-criarItemCardapio('Bolo de Chocolate','Um classico irresistivel com camadas de chocolate.', 'https://montarumnegocio.com/wp-content/uploads/2024/07/como-fazer-bolo-de-cenoura-para-vender.jpg')
+function consultarCardapio() {
+
+fetch('https://confeitaria-api-1.onrender.com/cardapio')
+.then(response => {
+if (!response.ok) {
+throw new Error('Erro na requisição');
+}
+return response.json();
+})
+.then(data => {
+console.log(data);
+criarItemCardapio(data.titulo,
+data.descricao,
+data.foto)
+})
+.catch(error => {
+console.error('Erro:', error);
+document.getElementById('resultado').innerHTML = `Erro: ${error.message}`;
+});
+}
